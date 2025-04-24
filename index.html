@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>钓鱼邮件举报 - 答题小游戏</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>钓鱼邮件举报 - 答题小游戏</h1>
+        <div id="start-container" class="start-container">
+            <button id="start-button" class="btn start-btn">开始闯关</button>
+        </div>
+        <div id="question-container" class="question-container hide">
+            <!-- 题目和题号选择会动态加载到这里 -->
+        </div>
+        <div id="answer-buttons" class="btn-container hide">
+            <!-- 答案按钮会动态加载到这里 -->
+        </div>
+        <button id="submit-button" class="btn hide center-btn">提交答案</button>
+        <button id="next-button" class="btn hide center-btn">下一题</button>
+        <button id="retry-button" class="btn hide center-btn">重新作答</button>
+        <div id="result-container" class="result-container hide">
+            <!-- 分数和结果会显示在这里 -->
+        </div>
+        <button id="back-button" class="btn hide back-btn">返回</button>
+    </div>
+
+    <!-- 图片模态框 -->
+    <div id="image-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+
+    <!-- 恭喜模态框 -->
+    <div id="congrats-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p class="congrats-text">恭喜你，闯关成功！请积极举报钓鱼邮件。</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
